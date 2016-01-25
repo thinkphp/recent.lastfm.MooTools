@@ -12,12 +12,7 @@
              <img class="loading" src="img/preloader.gif" alt="Loading" title="Loading">
         </div>
 
-        <div class="container2">
-             <img class="loading" src="img/preloader.gif" alt="Loading" title="Loading">
-        </div>
-
-
-         <script id="tracks-template" type="text/x-handlebars-template">
+        <script id="tracks-template" type="text/x-handlebars-template">
             {{#each this}}
                 <div class="lastfm cf">
                     <div class="cover">
@@ -47,7 +42,7 @@
 new Lastfm({        
        template: document.id('tracks-template').get('html'),
        container: $$('.container'),
-       username: 'olivboy',
+       username: 'voidberg',
        count: 12,
        apikey: '2993c6e15c91a2890c2f11fa95673067'
 })
