@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+     <head>
+           <title>Get Recent Tracks Last.fm</title>  
+           <link rel="stylesheet" href="css/style.css" />
+     </head>
+
+     <body>
+
+        <h1 id="recent-header"></h1>
+        <div class="container">
+             <img class="loading" src="img/preloader.gif" alt="Loading" title="Loading">
+        </div>
+
+        <div class="container2">
+             <img class="loading" src="img/preloader.gif" alt="Loading" title="Loading">
+        </div>
+
+
+         <script id="tracks-template" type="text/x-handlebars-template">
+            {{#each this}}
+                <div class="lastfm cf">
+                    <div class="cover">
+                        <a href="{{link}}" title="{{song}}">
+                            <img src="images/vinyl.png" class="highlight">
+                        </a>
+                        {{#if image}}
+                        <img alt="{{album}}" src="{{image}}">
+                        {{else}}
+                        <img alt="{{album}}" src="images/noartwork.png">
+                        {{/if}}
+                    </div>
+                    <div class="info">
+                        <p class="song">{{song}}</p>
+                        <p class="artist">{{artist}}</p>
+                        <p class="album">{{album}}</p>
+                    </div>
+                </div>
+            {{/each}}
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>       
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
+        <script src="js/last.fm.js"></script>
+        <script>
+
+new Lastfm({        
+       template: document.id('tracks-template').get('html'),
+       container: $$('.container'),
+       username: 'olivboy',
+       count: 12,
+       apikey: '2993c6e15c91a2890c2f11fa95673067'
+})
+
+         </script>
+     </body>
+</html>
