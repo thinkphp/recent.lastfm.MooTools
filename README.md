@@ -7,9 +7,10 @@ How to use
 ----------
 
 Include the latest version MooTools Framework, then .js into the page:
-        <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>       
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
-        <script src="js/last.fm.js"></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>       
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
+   <script src="js/last.fm.js"></script>
      
 ##Example
 
