@@ -10,7 +10,7 @@ license:
 
 requires:
  core/1.6.0: '*'
- Handlebars: '1.0.0' 
+ Handlebars/1.0.0: '*'
 
 provides: [Lastfm]
 ...
