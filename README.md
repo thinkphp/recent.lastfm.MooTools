@@ -65,4 +65,5 @@ How to use
     </script>
 
     # In action
+
     [lastfm](http://lastfm.thinkphp.ro)
