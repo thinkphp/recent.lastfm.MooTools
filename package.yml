@@ -1,6 +1,6 @@
 name: recent.lastfm.MooTools
 author: thinkphp
-current: v1.0
+current: v1.1
 category: Utilities
 tags: [lastfm, request, music, media]
 docs: https://github.com/thinkphp/recent.lastfm.MooTools/blob/master/docs/recent.lastfm.MooTools.md
