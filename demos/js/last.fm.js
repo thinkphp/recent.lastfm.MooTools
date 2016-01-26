@@ -22,7 +22,7 @@ var Lastfm = new Class({
 
                		this.container = config.container
 
-                        if( document.id('recent-header') ) document.id('recent-header').set('html','Get the Recent Tracks from <b>' + config.username + '\'</b>s Music Last.fm')
+                        if( document.id( config.header ) ) document.id( config.header ).set('html','Get the Recent Tracks from <b>' + config.username + '\'</b>s Music Last.fm')
 
             		this.fetch()
              },
