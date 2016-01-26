@@ -64,6 +64,6 @@ How to use
             {{/each}}
     </script>
 
-    # In action
+# In action
 
-    [lastfm](http://lastfm.thinkphp.ro)
+[lastfm](http://lastfm.thinkphp.ro)
