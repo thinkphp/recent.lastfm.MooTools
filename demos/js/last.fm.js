@@ -1,22 +1,3 @@
-/*
----
-description: 
-
-authors:
-- Adrian Statescu (http://thinkphp.ro)
-
-license:
-- MIT-style license
-
-requires:
- core/1.6.0: '*'
- Handlebars/1.0.0: '*'
-
-provides: [Lastfm]
-...
-
-*/
-
 var Lastfm = new Class({
 
              initialize: function( config ) {
@@ -33,7 +14,7 @@ var Lastfm = new Class({
 
                		this.container = config.container
 
-                        if( document.id( config.header ) ) document.id( config.header ).set('html','Get the Recent Tracks from <b>' + config.username + '\'</b>s Music Last.fm')
+                        if( document.id( config.header ) ) document.id( config.header ).set('html','Get the Recent Tracks from <b>' + config.username + '\'</b>s Music <img src="images/logo.png">')
 
             		this.fetch()
              },
@@ -64,7 +45,9 @@ var Lastfm = new Class({
 
                                          album: track.album['#text'],
 
-                                         link: track.url                                           
+                                         link: track.url,
+
+                                         time: track.date['#text']                                           
                                   } 
                              }) 
                                  
