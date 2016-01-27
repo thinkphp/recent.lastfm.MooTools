@@ -59,6 +59,7 @@ How to use
                         <p class="song">{{song}}</p>
                         <p class="artist">{{artist}}</p>
                         <p class="album">{{album}}</p>
+                        <p class="album">{{time}}</p>
                     </div>
                 </div>
             {{/each}}
