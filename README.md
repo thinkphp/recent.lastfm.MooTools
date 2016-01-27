@@ -63,7 +63,3 @@ How to use
                 </div>
             {{/each}}
     </script>
-
-# In action
-
-[lastfm](http://lastfm.thinkphp.ro)

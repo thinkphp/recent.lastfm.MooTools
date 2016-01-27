@@ -1,10 +1,21 @@
 /*
- * Get RecentTracks Last.Fm Plugin MooTools
- * Copyright (c) 2016
- * Version: 1.0.0
- * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
- * Requires: MooTools 1.6.0 or later and Handlebars 1.0 or later
- */
+---
+description: 
+
+authors:
+- Adrian Statescu (http://thinkphp.ro)
+
+license:
+- MIT-style license
+
+requires:
+ core/1.6.0: '*'
+ Handlebars/1.0.0: '*'
+
+provides: [Lastfm]
+...
+
+*/
 
 var Lastfm = new Class({
 
