@@ -29,10 +29,17 @@
                         <p class="song">{{song}}</p>
                         <p class="artist">{{artist}}</p>
                         <p class="album">{{album}}</p>
+                        <p class="album">{{time}}</p>
                     </div>
                 </div>
             {{/each}}
         </script>
+
+        <h1 id="recent-header-thinkphp"></h1>
+        <div class="container2" style="margin-left: 30px">
+             <img class="loading" src="images/preloader.gif" alt="Loading" title="Loading">
+        </div>
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"></script>       
         <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.min.js"></script>
@@ -42,8 +49,18 @@
 new Lastfm({        
        template: document.id('tracks-template').get('html'),
        container: $$('.container'),
-       username: 'Alchedoc',
+       username: 'thinkphp',
        count: 12,
+       header: 'recent-header',  
+       apikey: '2993c6e15c91a2890c2f11fa95673067'
+})
+
+new Lastfm({        
+       template: document.id('tracks-template').get('html'),
+       container: $$('.container2'),
+       username: 'olivboy',
+       count: 12,
+       header: 'recent-header-thinkphp',  
        apikey: '2993c6e15c91a2890c2f11fa95673067'
 })
 
