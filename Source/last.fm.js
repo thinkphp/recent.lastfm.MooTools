@@ -55,7 +55,10 @@ var Lastfm = new Class({
 
                              self.tracks = out.map(function( track ) {
 
+                                  if( track.date != undefined ) 
+
                                   return {
+
                                          image: track.image[ 2 ]['#text'],
 
                                          song: track.name,
@@ -64,12 +67,30 @@ var Lastfm = new Class({
 
                                          album: track.album['#text'],
 
-                                         link: track.url,
+                                         link: track.url
 
-                                         time: track.date['#text']                                           
+                                         ,time: track.date['#text']
                                   } 
+
+                                  else 
+  
+                                  return {
+
+                                         image: track.image[ 2 ]['#text'],
+
+                                         song: track.name,
+
+                                         artist: track.artist['#text'],
+
+                                         album: track.album['#text'],
+
+                                         link: track.url
+
+                                         ,time: "Scrobbling now ..."
+                                  } 
+
                              }) 
-                                 
+
                              self.attachTemplate( )
                         }
                         }).get( )
