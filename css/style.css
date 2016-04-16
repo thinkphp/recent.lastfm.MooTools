@@ -70,7 +70,7 @@ h1 {
 	color: #6F6F6F;
 	font: 3em 'SortsMillGoudyItalic';
 	margin:10px 30px 30px;
-	text-align: left
+	text-align: left;clear: both
 }
 
 .loading {
