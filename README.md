@@ -1,7 +1,7 @@
 Recent Tracks Last.fm Plugin MooTools
 =====================================
 
-![Screenshot](http://c2.staticflickr.com/2/1687/23981960244_16781b0216_z.jpg)
+https://last.fm/user/thinkphp
 
 How to use
 ----------
